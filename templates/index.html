@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+</head>
+<body>
+    <h2>California House Price Predictor</h2>
+    <form action="/predict" method="post">
+        <label>Median Income:</label><input type="text" name="MedInc"><br>
+        <label>House Age:</label><input type="text" name="HouseAge"><br>
+        <label>Average Rooms:</label><input type="text" name="AveRooms"><br>
+        <label>Average Bedrooms:</label><input type="text" name="AveBedrms"><br>
+        <label>Population:</label><input type="text" name="Population"><br>
+        <label>Average Occupancy:</label><input type="text" name="AveOccup"><br>
+        <label>Latitude:</label><input type="text" name="Latitude"><br>
+        <label>Longitude:</label><input type="text" name="Longitude"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
