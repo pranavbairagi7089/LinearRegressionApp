@@ -42,3 +42,12 @@ This is a machine learning web application that predicts California house prices
 ```bash
 git clone https://github.com/pranavbairagi7089/LinearRegressionApp.git
 cd LinearRegressionApp
+
+📦 Deployment
+Platform: Render
+
+Uses: gunicorn + Flask via Procfile
+
+📧 Contact
+Made with ❤️ by Pranav Bairagi
+🔗 GitHub
